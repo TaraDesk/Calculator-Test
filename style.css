@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calc {
+	width: 30vw;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.screen {
+	width: 100%;
+	height: 20%;
+	color: white;
+	background: darkblue;
+	font-size: 2rem;
+	text-align: right;
+	margin-bottom: 0.625rem;
+	border-radius: 5px;
+}
+
+.calc-buttons {
+	width: 100%;
+	height: 80%;
+	background: darkblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.calc-buttons-row {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.calc-buttons-row:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.calc-button {
+	flex-basis: 24.5%;
+	font-size: 1rem;
+	background: floralwhite;
+	color: black;
+	cursor: pointer;
+	border: none;
+}
+
+.calc-button:hover {
+	background: antiquewhite;
+}
+
+.calc-button:active {
+	background: navajowhite;
+}
+
+.calc-button:not(:last-child) {
+	margin-right: 0.5%;
+}
+
+.calc-button:last-child {
+	background: darkorange;
+	color: whitesmoke;
+}
+
+.calc-button:last-child:hover {
+	background: orangered;
+	color: navajowhite;
+}
+
+.double {
+	flex-basis: 49.7%;
+}
+
+.triple {
+	flex-basis: 74.8%;
+}
